@@ -21,11 +21,11 @@ class Proxy
   end
 
   def number_of_times_called(m)
-		@messages.count(m)
+		@messages.count m
 	end
 
   def called?(m)
-    @messages.include?(m)
+    @messages.include? m
   end
   
   def method_missing(method, *args, &block)
